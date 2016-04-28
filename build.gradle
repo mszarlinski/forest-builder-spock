@@ -1,0 +1,19 @@
+group 'pl.mszarlinski.spock.algo'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile "org.projectlombok:lombok:1.16.8"
+
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
